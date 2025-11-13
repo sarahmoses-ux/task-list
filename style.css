@@ -1,0 +1,130 @@
+* {
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+}
+.content {
+  width: 90%;
+  max-width: 550px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+body {
+  background-color: whitesmoke;
+}
+
+.header {
+  /* padding: 20px 15px; */
+  margin: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.nav-bar {
+  display: flex;
+  gap: 20px;
+}
+.fb {
+  padding: 9px 12px;
+  border: 10px;
+  border-radius: 6px;
+  background-color: rgba(6, 3, 158, 0.822);
+  color: white;
+  cursor: pointer;
+}
+.fb:hover {
+  color: black;
+}
+.sb {
+  padding: 8px 12px;
+  border: 10px;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.sb:hover {
+  color: orange;
+}
+i.fa-check-circle-o {
+  color: gray;
+}
+i.fa-trash-o {
+  float: right;
+  color: gray;
+}
+
+p {
+  color: gray;
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  border-bottom: 1px solid rgb(243, 229, 229);
+  padding: 20px 20px;
+}
+.stroked {
+  text-decoration: line-through;
+  color: gray;
+  cursor: pointer;
+}
+
+li:nth-of-type(4) {
+  background: linear-gradient(to right, #e0e7ff, transparent);
+  border-left: 5px solid rgba(0, 0, 225, 0.456);
+  transition: background 0.3 ease-in-out;
+  cursor: pointer;
+}
+li:nth-of-type(3):hover {
+  background: linear-gradient(to right, #e0e7ff77, transparent);
+  cursor: pointer;
+  transition: background 0.3 ease-in-out;
+}
+li:nth-of-type(4):hover {
+  background: linear-gradient(to right, #e0e7ff, transparent);
+  cursor: pointer;
+  transition: background 0.3 ease-in-out;
+}
+li:nth-of-type(5):hover {
+  background: linear-gradient(to right, #e0e7ff7a, transparent);
+  cursor: pointer;
+  transition: background 0.3 ease-in-out;
+}
+
+.foot {
+  padding: 23px;
+  color: grey;
+  text-align: center;
+  font-size: 12px;
+}
+@media {
+  .nav-bar {
+    display: flex;
+
+    gap: 1px;
+  }
+  .content {
+    max-width: 330px;
+  }
+  p {
+    color: gray;
+    padding-bottom: 30px;
+    font-size: 13px;
+  }
+  .foot {
+    padding: 23px;
+    color: grey;
+    text-align: center;
+    font-size: 15px;
+  }
+  .icon {
+    display: none;
+  }
+}

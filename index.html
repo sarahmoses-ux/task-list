@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,20 +15,28 @@
       <div class="header">
         <h1>Tasks list</h1>
         <nav class="nav-bar">
-          <button class="fb"><i class="fa fa-clock-o "> </i><span class="icon">Urgent</span> </button>
-          <button class="sb"><i class="fa fa-list"></i><span class="icon"> Latest</span> </button>
+          <button class="fb add-icon">
+            <i class="fa fa-plus"> </i><span class="icon"> Add Task</span>
+          </button>
         </nav>
       </div>
+
+      <!-- Prompt Box -->
+      <div class="prompt-box">
+        <h2>Add New Task</h2>
+        <i class="fa fa-close"></i>
+        <input type="text" placeholder="Enter task description" />
+        <button class="add-button">Add Task</button>
+      </div>
+
       <p>Hello, here are your latest tasks</p>
 
       <ul>
-        <li class="stroked"><i class="fa fa-check" style="font-size:15px"></i> Yt Intro remix <i class="fa fa-trash-o" style="font-size:24px"></i></li>
-        <li class="stroked"><i class="fa fa-check" style="font-size:15px"></i> Do the homework <i class="fa fa-trash-o" style="font-size:24px"></i></li>
-        <li class="unstroked"><i class="fa fa-check-circle-o" style="font-size:22px"></i> Magic stuff<i class="fa fa-trash-o" style="font-size:24px"></i></li>
-        <li class="unstroked"><i class="fa fa-check-circle-o" style="font-size:22px"></i> Magic stuff 2.0<i class="fa fa-trash-o" style="font-size:24px"></i></li>
-        <li class="unstroked"><i class="fa fa-check-circle-o" style="font-size:22px"></i> Magic stuff<i class="fa fa-trash-o" style="font-size:24px"></i></li>
+       
       </ul>
       <p class="foot">Last updated 12 minutes ago</p>
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
